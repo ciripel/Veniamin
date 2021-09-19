@@ -1,0 +1,35 @@
+{
+  "help": [
+    "-- `!help` | These are your commands.",
+    "-- `!about` | Info about this bot.",
+    "_The commands are not implemented yet. They will be implemented based on what information the community will wish to see in the bot_"
+  ],
+  "about": [
+    "• Version v0.1.2",
+    "• Author: ciripel _(Discord: Amitabha#0517)_",
+    "• Source Code: <https://github.com/ciripel/Veniamin>"
+  ],
+  "unknown": "Command not recognized. `!help` to get a list of my commands",
+  "default": "All the bot calls are allowed only in <#888705313807675432> channel or you can wisper me your secrets...",
+  "banned_words": [
+    "Todor Kolev",
+    "Bojidar Marinov",
+    "Branimir Angelov",
+    "Kamil Wojciechowski",
+    "Amitabha",
+    "BOT",
+    "Apocryph",
+    "APOCRYPH",
+    "apocryph",
+    "News",
+    "Wallet",
+    "Update"
+  ],
+  "ignored_ids": [
+    401412050678710273,
+    225149959710703616,
+    472887230478680084,
+    455093165225934888,
+    359782573066551320
+  ]
+}
