@@ -2,7 +2,7 @@
   "help": [
     "-- `!help` | These are your commands.",
     "-- `!about` | Info about this bot.",
-    "_The commands are not implemented yet. They will be implemented based on what information the community will wish to see in the bot_"
+    "_The commands are not implemented yet. They will be implemented based on what information the community wish to see in the bot_"
   ],
   "about": [
     "• Version v0.1.2",
