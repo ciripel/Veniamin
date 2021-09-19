@@ -8,7 +8,7 @@ import asyncio
 
 
 logging.basicConfig(format="%(asctime)s | %(levelname)s:%(name)s:%(message)s",
-                    filename='cicerone.log', level=logging.INFO)
+                    filename='veniamin.log', level=logging.INFO)
 logging.info('----- Started -----')
 
 with open("auth.json") as data_file:
