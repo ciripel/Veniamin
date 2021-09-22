@@ -5,7 +5,6 @@ from discord.ext import tasks
 import discord
 import logging
 import json
-import asyncio
 
 
 logging.basicConfig(format="%(asctime)s | %(levelname)s:%(name)s:%(message)s",

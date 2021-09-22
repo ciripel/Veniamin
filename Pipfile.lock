@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "da77837d0aa841d48a221e0bd31feabbec63b5faa8651aebe029bdec64215679"
+            "sha256": "0a6fbb99a7fd7bbc7f477ac66f38db1bf46292d3c9980daa15d0fd87156ab516"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -65,16 +65,6 @@
             ],
             "version": "==3.0.1"
         },
-        "asyncio": {
-            "hashes": [
-                "sha256:83360ff8bc97980e4ff25c964c7bd3923d333d177aa4f7fb736b019f26c7cb41",
-                "sha256:b62c9157d36187eca799c378e572c969f0da87cd5fc42ca372d92cdb06e7e1de",
-                "sha256:c46a87b48213d7464f22d9a497b9eef8c1928b68320a2fa94240f969f6fec08c",
-                "sha256:c4d18b22701821de07bd6aea8b53d21449ec0ec5680645e5317062ea21817d2d"
-            ],
-            "index": "pypi",
-            "version": "==3.4.3"
-        },
         "attrs": {
             "hashes": [
                 "sha256:149e90d6d8ac20db7a955ad60cf0e6881a3f20d37096140088356da6c716b0b1",
@@ -89,7 +79,7 @@
             ],
             "version": "==4.0.0"
         },
-        "discord-py": {
+        "discord.py": {
             "hashes": [
                 "sha256:462cd0fe307aef8b29cbfa8dd613e548ae4b2cb581d46da9ac0d46fb6ea19408",
                 "sha256:c6f64db136de0e18e090f6752ea68bdd4ab0a61b82dfe7acecefa22d6477bb0c"
