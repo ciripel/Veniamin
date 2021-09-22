@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # Work with Python 3.7+
 
+from discord.ext import tasks
 import discord
 import logging
 import json
@@ -39,6 +40,8 @@ def is_number(s):
         return False
 
 
+@tasks.loop(minutes=6)
+# task runs every 6 minutes
 async def update_members():
     await client.wait_until_ready()
     guild = client.get_guild(667002471440449539)
@@ -50,7 +53,6 @@ async def update_members():
         total_members = guild.member_count
         await total_channel.edit(name=f"Total Members: {total_members}")
         await online_channel.edit(name=f"Online Members: {online_members}")
-        await asyncio.sleep(360)  # task runs every 6 minutes
 
 
 @client.event
@@ -182,6 +184,6 @@ async def on_member_update(before, after):
 async def on_ready():
     print(f"Logged in as: {client.user.name} {{{client.user.id}}}")
 
-client.loop.create_task(update_members())
+update_members.start()
 client.run(TOKEN)
 logging.info('----- Finished -----')
