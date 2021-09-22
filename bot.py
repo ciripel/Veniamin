@@ -40,10 +40,11 @@ def is_number(s):
         return False
 
 
-@tasks.loop(minutes=6)
-# task runs every 6 minutes
+@tasks.loop(minutes=15)
+# task runs every 15 minutes
 async def update_members():
-    await client.wait_until_ready()
+    await client.wait_until_ready() and logging.info(f'Client is ready for members update!')
+    logging.info(f'Calling Members update')
     guild = client.get_guild(667002471440449539)
     total_channel = client.get_channel(888706799484694570)
     online_channel = client.get_channel(888707284832747541)
@@ -51,8 +52,8 @@ async def update_members():
         widget = await guild.widget()
         online_members = len(widget.members)
         total_members = guild.member_count
-        await total_channel.edit(name=f"Total Members: {total_members}")
-        await online_channel.edit(name=f"Online Members: {online_members}")
+        await total_channel.edit(name=f"Total Members: {total_members}") and logging.info(f'Changed Total Members: {total_members}')
+        await online_channel.edit(name=f"Online Members: {online_members}") and logging.info(f'Changed Online Members: {online_members}')
 
 
 @client.event
