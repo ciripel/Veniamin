@@ -50,7 +50,7 @@ async def update_members():
         total_members = guild.member_count
         await total_channel.edit(name=f"Total Members: {total_members}")
         await online_channel.edit(name=f"Online Members: {online_members}")
-        await asyncio.sleep(120)  # task runs every 10 seconds
+        await asyncio.sleep(360)  # task runs every 6 minutes
 
 
 @client.event
