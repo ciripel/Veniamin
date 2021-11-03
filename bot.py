@@ -46,12 +46,11 @@ async def update_members():
     guild = client.get_guild(667002471440449539)
     total_channel = client.get_channel(888706799484694570)
     online_channel = client.get_channel(888707284832747541)
-    while not client.is_closed():
-        widget = await guild.widget()
-        online_members = len(widget.members)
-        total_members = guild.member_count
-        await total_channel.edit(name=f"Total Members: {total_members}")
-        await online_channel.edit(name=f"Online Members: {online_members}")
+    widget = await guild.widget()
+    online_members = len(widget.members)
+    total_members = guild.member_count
+    await total_channel.edit(name=f"Total Members: {total_members}")
+    await online_channel.edit(name=f"Online Members: {online_members}")
 
 
 @client.event
